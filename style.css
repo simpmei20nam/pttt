@@ -1,0 +1,134 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: url('header-bg.jpeg') no-repeat center center;
+    background-size: cover;
+    color: darkred !important;
+    text-align: center !important;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    border-bottom: 5px solid #4CAF50;
+}
+  
+  header h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  header h1 a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: linear-gradient(90deg, #4CAF50, #388E3C);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  nav a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Bố cục xen kẽ: hàng */
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Hàng đảo ngược: chữ bên phải, hình bên trái */
+  .row.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Cột chữ */
+  .text-col {
+    flex: 1;
+  }
+  
+  .text-col h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .text-col p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Cột hình ảnh */
+  .image-col {
+    flex: 1;
+  }
+  
+  .image-col img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #2c3e50;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  /* Responsive: Chuyển thành cột khi màn hình nhỏ */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
