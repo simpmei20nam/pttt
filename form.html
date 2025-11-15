@@ -1,74 +1,115 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Đăng kí thành viên CLB ngoại khóa</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #fff7c9; 
-        }
-        h1 {
-            text-align: center;
-            font-size: 20px;
-            margin-top: 20px;
-        }
-        form {
-            width: 420px;
-            margin: 10px auto 30px auto;
-        }
-        table {
-            width: 100%;
-        }
-        td {
-            padding: 4px 2px;
-            vertical-align: top;
-            font-size: 14px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="date"],
-        select,
-        textarea {
-            width: 220px;
-            box-sizing: border-box;
-        }
-        textarea {
-            height: 80px;
-        }
-        .submit-row {
-            text-align: center;
-            padding-top: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Đăng kí thành viên CLB - THPT Chu Văn An</title>
+
+<!-- Chỉ CSS cho FORM, KHÔNG CSS header/footer/nav -->
+<style>
+    /* KHUNG FORM MÀU VÀNG */
+    .form-container {
+        width: 480px;
+        margin: 35px auto;
+        background: #fff7c9;        
+        border: 1px solid #cbbf7a; 
+        padding: 20px 30px;
+        box-sizing: border-box;
+    }
+
+    h1.form-title {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 6px 4px;
+        font-size: 14px;
+        vertical-align: top;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="file"],
+    select,
+    textarea {
+        width: 240px;
+        padding: 4px;
+        background: white;
+        border: 1px solid #999;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    .submit-row {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    input[type="submit"] {
+        padding: 6px 20px;
+        cursor: pointer;
+    }
+</style>
+
+<link rel="stylesheet" href="style.css"> <!-- CSS header + footer của bạn -->
 </head>
+
 <body>
 
-    <h1>ĐĂNG KÍ THÀNH VIÊN CLB NGOẠI KHÓA<br>
+<!-- HEADER (LẤY CSS TỪ style.css) -->
+<header>
+    <h1>
+        <a href="index.html">Câu lạc bộ ngoại khóa trường THPT Chuyên Chu Văn An</a>
+    </h1>
+</header>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="sport.html">CLB Thể thao</a>
+    <a href="art.html">CLB Nghệ thuật</a>
+</nav>
+
+<!-- FORM CHÍNH -->
+<div class="form-container">
+
+    <h1 class="form-title">
+        ĐĂNG KÍ THÀNH VIÊN CLB NGOẠI KHÓA<br>
         TRƯỜNG THPT CHU VĂN AN
     </h1>
 
-    <!-- FORM CHÍNH XÁC 100% - KHÔNG SUBMIT -->
-    <form onsubmit="event.preventDefault(); alert('Đăng kí thành công!'); window.location.href='index.html';">
+    <form onsubmit="event.preventDefault(); alert('Đăng kí thành công!');">
 
         <table>
             <tr>
                 <td>Họ tên:</td>
                 <td><input type="text" name="hoten"></td>
             </tr>
+
             <tr>
                 <td>Email:</td>
                 <td><input type="email" name="email"></td>
             </tr>
+
             <tr>
                 <td>Ngày sinh:</td>
                 <td><input type="date" name="ngaysinh"></td>
             </tr>
+
             <tr>
                 <td>Địa chỉ:</td>
                 <td><textarea name="diachi"></textarea></td>
             </tr>
+
             <tr>
                 <td>Giới tính:</td>
                 <td>
@@ -76,33 +117,36 @@
                     <label><input type="radio" name="gioitinh" value="nu"> Nữ</label>
                 </td>
             </tr>
+
             <tr>
                 <td>Sở thích:</td>
                 <td>
-                    <label><input type="checkbox" name="sothich" value="thethao"> Thể thao</label><br>
-                    <label><input type="checkbox" name="sothich" value="choidientu"> Trò chơi điện tử</label><br>
-                    <label><input type="checkbox" name="sothich" value="nhay"> Nhảy</label><br>
-                    <label><input type="checkbox" name="sothich" value="ve"> Vẽ</label><br>
-                    <label><input type="checkbox" name="sothich" value="hat"> Hát</label>
+                    <label><input type="checkbox" value="covua"> Cờ vua</label><br>
+                    <label><input type="checkbox" value="game"> Trò chơi điện tử</label><br>
+                    <label><input type="checkbox" value="dulich"> Du lịch</label><br>
+                    <label><input type="checkbox" value="camhoa"> Cắm hoa</label><br>
+                    <label><input type="checkbox" value="nauan"> Nấu ăn</label>
                 </td>
             </tr>
+
             <tr>
                 <td>Hồ sơ đính kèm:</td>
-                <td><input type="file" name="hoso"></td>
+                <td><input type="file"></td>
             </tr>
+
             <tr>
                 <td>Đăng kí CLB:</td>
                 <td>
-                    <select name="clb">
+                    <select>
                         <option>Bóng đá</option>
                         <option>Bóng rổ</option>
                         <option>Cầu lông</option>
+                        <option>Âm nhạc</option>
                         <option>Nhảy</option>
-                        <option>Vẽ</option>
-                        <option>Hát</option>
                     </select>
                 </td>
             </tr>
+
             <tr>
                 <td colspan="2" class="submit-row">
                     <input type="submit" value="Đăng kí">
@@ -111,6 +155,17 @@
         </table>
 
     </form>
+</div>
+
+<!-- FOOTER (CSS từ style.css) -->
+<footer>
+  <h3>Liên hệ:</h3>
+  <ul>
+    <li>Điện thoại: 03636363636</li>
+    <li>Website: <a href="https://simpmei20nam.github.io/pttt/index.html">CLB Ngoại khóa Trường Chu Văn An</a></li>
+    <li>Tham gia CLB: <a href="form.html">Mẫu đăng kí</a></li>
+  </ul>
+</footer>
 
 </body>
 </html>
