@@ -73,7 +73,39 @@
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  
+
+/* SLOGAN 3 CỘT */
+.slogan {
+  background: #d3d3d3;          /* nền xám nhạt như ảnh */
+  padding: 20px 40px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.slogan-item {
+  flex: 1;
+}
+
+.slogan-item h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.slogan-item p {
+  font-size: 0.95rem;
+}
+
+/* Khi màn hình nhỏ, cho 3 dòng xếp dọc */
+@media (max-width: 768px) {
+  .slogan {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
   /* Bố cục xen kẽ: hàng */
   .row {
     display: flex;
@@ -154,5 +186,6 @@ footer a {
   }
 
   
+
 
 
