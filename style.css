@@ -116,14 +116,26 @@
     object-fit: cover;
   }
   
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1.5rem 0;
-    background: #2c3e50;
-    color: white;
-    font-size: 1rem;
-  }
+footer {
+    background: #dcdcdc;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+footer ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer li {
+    margin: 5px 0;
+    font-size: 15px;
+}
   
   /* Responsive: Chuyển thành cột khi màn hình nhỏ */
   @media (max-width: 768px) {
@@ -133,3 +145,4 @@
   }
 
   
+
