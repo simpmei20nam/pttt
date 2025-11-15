@@ -117,14 +117,17 @@
   }
   
 footer {
-    background: #dcdcdc;
-    padding: 20px;
+    background: #d3d3d3;     /* nền xám nhạt giống ảnh */
+    padding: 25px 30px;
     margin-top: 40px;
+    color: black;             /* chữ đen */
+    font-size: 16px;
 }
 
 footer h3 {
-    margin: 0 0 10px 0;
+    margin-bottom: 10px;
     font-size: 18px;
+    font-weight: bold;
 }
 
 footer ul {
@@ -133,8 +136,14 @@ footer ul {
 }
 
 footer li {
-    margin: 5px 0;
+    margin: 6px 0;
     font-size: 15px;
+}
+
+/* Giữ màu link theo kiểu mặc định trình duyệt: xanh + gạch chân */
+footer a {
+    color: blue;
+    text-decoration: underline;
 }
   
   /* Responsive: Chuyển thành cột khi màn hình nhỏ */
@@ -145,4 +154,5 @@ footer li {
   }
 
   
+
 
