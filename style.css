@@ -14,7 +14,7 @@
   
   /* Header */
   header {
-    background: url('header-bg.jpeg') no-repeat center center;
+    background: url('https://afamilycdn.com/150157425591193600/2022/3/16/27558354212276201611018694686136452004136057n-1647414481389500653682.jpg') no-repeat center center;
     background-size: cover;
     color: darkred !important;
     text-align: center !important;
@@ -131,4 +131,5 @@
       flex-direction: column;
     }
   }
+
   
